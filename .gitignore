@@ -1,0 +1,4 @@
+# Do not commit .vscode folder
+.vscode
+# Do not commit c++ object files
+*.o
