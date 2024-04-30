@@ -2,3 +2,7 @@
 .vscode
 # Do not commit c++ object files
 *.o
+# Do not commit c++ executables (windows)
+*.exe
+# Do not commit c++ executables (linux/mac)
+main
