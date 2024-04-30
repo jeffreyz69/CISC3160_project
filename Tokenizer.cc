@@ -5,35 +5,13 @@
 #include <sstream>
 #include <cctype>  // For isdigit, isspace
 #include <stdexcept>  // For std::invalid_argument
+#include "Tokenizer.hpp"
 
 
 using namespace std;
 
-class Tokenizer {
-private:
-    vector<string> tokens;
-    string result;
-
-public:
-
-    // default constructor
-    Tokenizer();
-
-    // Tokenize the input string and store the tokens in the 'tokens' member variable
-    void tokenizeInput(const string& input);
-
-    void validateTokens();
-
-
-    // Get the tokens
-    vector<string> getTokens() const;
-
-    string getResult() const {
-        return result;
-    }
-};
-    // default constructor
-    Tokenizer::Tokenizer() : result("") {}
+// default constructor
+Tokenizer::Tokenizer() : result("") {}
 
 
 void Tokenizer::tokenizeInput(const string& input) {
@@ -60,10 +38,6 @@ void Tokenizer::tokenizeInput(const string& input) {
         tokens.push_back(token);
     }
 
-    //test statement print the lines read from the file
-    // for (const auto& token : tokens) {
-    //     cout << token << " ";
-    // }
 }
 
 

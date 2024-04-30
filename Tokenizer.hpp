@@ -27,8 +27,6 @@ public:
     // Returns the tokens
     std::vector<std::string> getTokens() const;
 
-    // Returns the result of the expression evaluation
-    std::string getResult() const;
 };
 
 #endif // TOKENIZER_HPP
