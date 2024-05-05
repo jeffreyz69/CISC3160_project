@@ -31,10 +31,10 @@ int main(int argc, char const *argv[])
         tokens.insert(tokens.end(), lineTokens.begin(), lineTokens.end());
     }
     //test statement print the lines read from the file
-    cout << "\nMain:" << endl;
-    for (const auto& token : tokens) {
-        cout << token << " ";
-    }
+    // cout << "\nMain:" << endl;
+    // for (const auto& token : tokens) {
+    //     cout << token << " ";
+    // }
     // Create a parser object
     Parser parser(tokens);
 
