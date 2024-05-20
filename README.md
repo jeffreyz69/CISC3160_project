@@ -12,3 +12,9 @@ To clean the compiled files, run the following command:
 ```
 make clean
 
+By default, the make run command will compile the code and run the executable file with a default input file named test.txt
+
+To run the executable file with a different input file, run the following command:
+```
+./main <yourfile>
+```

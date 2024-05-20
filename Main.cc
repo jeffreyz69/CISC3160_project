@@ -10,8 +10,15 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    string filename;
+    if(argc < 2){
+        filename = "test.txt"; //default to this file if no file is provided
+    }else{
+        filename = argv[1];
+    }
+    cout << "File name passed: " << filename << endl;
     //Read from file and store everything in a string
-    ifstream file("test.txt");
+    ifstream file(filename);
     vector<string> tokens;
 
     if (!file.is_open())
